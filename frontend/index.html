@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JqueryVsReactInternalStateVsRedux</title>
+    <link rel="stylesheet" media="all" href="/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" media="all" href="/css/bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" media="all" href="/css/application.css" />
+    <script src="/webpack-bundle.js"></script>
+  </head>
+  <body>
+
+    <!-- HTML for the jQuery timer -->
+    <div id="jquery-timer">
+      <div class='ml-100'>
+        <div class='mt-100 w-40pct timer-box'>
+          <h4 class="pull-left">JQuery Timer</h4>
+          <div class='pull-right'>
+            <span class="count">0</span>
+            <button type='button' class='btn btn-warning ml-10' style="display:none;">
+              Stop
+            </button>
+            <button type='button' class='btn btn-success ml-10'>
+              Start
+            </button>
+            <button type='button' class='btn btn-danger ml-10'>
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- React Timer component will mount here -->
+    <div id="react-timer">
+    </div>
+
+    <!-- Redux Timer component will mount here -->
+    <div id="redux-timer">
+    </div>
+
+  </body>
+</html>
